@@ -18,6 +18,10 @@ class Config:
     print(f"🔑 OpenAI API Key carregada: {OPENAI_API_KEY[:8]}..." if OPENAI_API_KEY else "❌ OpenAI API Key não encontrada")
     OPENAI_MODEL_NAME = os.getenv('OPENAI_MODEL_NAME', 'gpt-4o-mini')
     
+    # Serper API Configuration (para busca na web)
+    SERPER_API_KEY = os.getenv('SERPER_API_KEY')
+    print(f"🔍 Serper API Key carregada: {SERPER_API_KEY[:8]}..." if SERPER_API_KEY else "⚠️ Serper API Key não encontrada - busca na web limitada")
+    
     # CrewAI Configuration
     CREWAI_VERBOSE = os.getenv('CREWAI_VERBOSE', 'True').lower() == 'true'
     CREWAI_DEBUG = os.getenv('CREWAI_DEBUG', 'False').lower() == 'true'
@@ -35,10 +39,19 @@ class Config:
         return True
     
     @classmethod
+    def validate_web_search_config(cls):
+        """Valida se as configurações para busca na web estão definidas"""
+        if not cls.SERPER_API_KEY:
+            print("⚠️ SERPER_API_KEY não está definida - ferramentas de busca na web não funcionarão")
+            return False
+        return True
+    
+    @classmethod
     def get_config_summary(cls):
         """Retorna um resumo das configurações atuais"""
         return {
             'openai_model': cls.OPENAI_MODEL_NAME,
+            'serper_api_configured': bool(cls.SERPER_API_KEY),
             'crewai_verbose': cls.CREWAI_VERBOSE,
             'crewai_debug': cls.CREWAI_DEBUG,
             'app_env': cls.APP_ENV,

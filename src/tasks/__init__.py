@@ -7,6 +7,14 @@
 from .research_task import ResearchTask
 from .writing_task import WritingTask
 from .editing_task import EditingTask
+from .inquiry_resolution_task import InquiryResolutionTask
+from .quality_assurance_task import QualityAssuranceTask
 
-__all__ = ['ResearchTask', 'WritingTask', 'EditingTask']
+__all__ = [
+    'ResearchTask', 
+    'WritingTask', 
+    'EditingTask',
+    'InquiryResolutionTask',
+    'QualityAssuranceTask'
+]
 # AI_GENERATED_CODE_END 

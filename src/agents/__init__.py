@@ -7,6 +7,14 @@
 from .researcher import ResearcherAgent
 from .writer import WriterAgent
 from .editor import EditorAgent
+from .support_agent import SupportAgent
+from .quality_assurance_agent import QualityAssuranceAgent
 
-__all__ = ['ResearcherAgent', 'WriterAgent', 'EditorAgent']
+__all__ = [
+    'ResearcherAgent', 
+    'WriterAgent', 
+    'EditorAgent',
+    'SupportAgent',
+    'QualityAssuranceAgent'
+]
 # AI_GENERATED_CODE_END 

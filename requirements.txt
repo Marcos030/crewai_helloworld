@@ -1,18 +1,30 @@
 # AI_GENERATED_CODE_START
 # [AI Generated] Data: 19/06/2024
-# Descrição: Arquivo de dependências simplificado para projeto CrewAI
+# Descrição: Dependências do projeto CrewAI Hello World
 # Gerado por: Cursor AI
-# Versão: Python 3.12+
+# Versão: Python 3.10+, CrewAI 0.28.0+
 
-# Dependências principais
-crewai>=0.28.0
+# Core CrewAI
+crewai==0.28.0
+
+# OpenAI Integration
 openai>=1.0.0
+
+# Environment Management
 python-dotenv>=1.0.0
 
-# Dependências opcionais
-requests>=2.31.0
+# Display and Formatting
 ipython>=8.0.0
 
-# Evitar conflitos de versão
-numpy>=1.26.0
+# CrewAI Tools (for using_memory.py example)
+# NOTA: Instalar com --no-deps para evitar problemas de compilação
+# pip install crewai-tools --no-deps
+crewai-tools>=0.1.6
+
+# Additional Utilities
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Dependências opcionais (instalar se necessário)
+# embedchain>=0.1.0  # Requer Microsoft Visual C++ Build Tools
 # AI_GENERATED_CODE_END 
