@@ -1,0 +1,18 @@
+# AI_GENERATED_CODE_START
+# [AI Generated] Data: 19/06/2024
+# Descrição: Arquivo de dependências simplificado para projeto CrewAI
+# Gerado por: Cursor AI
+# Versão: Python 3.12+
+
+# Dependências principais
+crewai>=0.28.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Dependências opcionais
+requests>=2.31.0
+ipython>=8.0.0
+
+# Evitar conflitos de versão
+numpy>=1.26.0
+# AI_GENERATED_CODE_END 
