@@ -172,3 +172,19 @@ crewai_cache/
 agent_cache/
 task_cache/
 # AI_GENERATED_CODE_END 
+# Arquivos de saída dos agentes/job application
+src/files/*.md
+files/*.md
+src/files/*.json
+files/*.json
+
+# Banco de dados e arquivos temporários
+venue_details.json
+marketing_report.md
+
+# Garantir que todos os __pycache__ e .pyc sejam ignorados
+src/**/__pycache__/
+src/**/*.pyc
+
+# Garantir que o ambiente virtual na raiz seja ignorado
+venv/ 
