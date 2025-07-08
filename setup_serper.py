@@ -78,7 +78,7 @@ def create_env_file():
 OPENAI_API_KEY=sk-proj-your-openai-api-key-here
 
 # OpenAI Model Name
-OPENAI_MODEL_NAME=gpt-4o-mini
+OPENAI_MODEL_NAME=gpt-4-turbo
 
 # Serper API Key (para busca na web)
 SERPER_API_KEY=your-serper-api-key-here

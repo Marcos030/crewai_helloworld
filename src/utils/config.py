@@ -16,7 +16,7 @@ class Config:
     # OpenAI Configuration
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     print(f"🔑 OpenAI API Key carregada: {OPENAI_API_KEY[:8]}..." if OPENAI_API_KEY else "❌ OpenAI API Key não encontrada")
-    OPENAI_MODEL_NAME = os.getenv('OPENAI_MODEL_NAME', 'gpt-4o-mini')
+    OPENAI_MODEL_NAME = os.getenv('OPENAI_MODEL_NAME', 'gpt-4-turbo')
     
     # Serper API Configuration (para busca na web)
     SERPER_API_KEY = os.getenv('SERPER_API_KEY')
